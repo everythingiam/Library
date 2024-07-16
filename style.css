@@ -1,0 +1,138 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    background: rgb(241, 241, 241);
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgb(37, 37, 37);
+}
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+section{
+    padding-top: 20px;
+    display: flex;
+    gap: 100px;
+}
+.main-p{
+    max-width: 400px;
+}
+.add{
+    width: 100%;
+    border-radius: 92px;
+    border: 1px solid rgb(24, 24, 24);
+    background-color: #ff8025;
+    font-size: 50px;
+    transition: 0.2s;
+    color: rgb(37, 37, 37);
+}
+.add:hover{
+    background-color: #ff8f3f;
+    font-size: 60px;
+}
+.add:active{
+    background-color: #ea731f;
+}
+.books{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    gap: 5%;
+}
+.card {
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    border: 0.5px solid rgb(132, 132, 132);
+    border-radius: 12px;
+    padding: 25px;
+    filter: drop-shadow(1px 1px 3px rgb(210, 210, 210))
+}
+.card span{
+    font-size: 12px;
+    color: rgb(151, 151, 151);
+}
+.card h3{
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+.card p{
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+button{
+    width: 100%;
+    border-radius: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: rgb(37, 37, 37);
+    transition: 0.2s;
+}
+.delete{
+    background-color: #ff8025;
+    border: 0.5px solid rgb(32, 32, 32);
+
+}
+.card .delete:hover{
+    background-color: #ff8f3f;
+}
+.card .delete:active{
+    background-color: #ea731f;
+
+}
+.reading{
+    background-color: rgb(233, 233, 233);
+    margin-bottom: 10px;
+    border: 0.5px solid rgb(132, 132, 132);
+
+}
+.reading:hover{
+    background-color: #cfcfcf;
+}
+.dialog{
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+}
+.dialog-content{
+    display: flex;
+    flex-direction: column;
+    background: rgb(241, 241, 241);
+    padding: 4% 15%;
+    border-radius: 12px;
+    border: 1px solid rgb(132, 132, 132);
+    gap: 15px;
+    min-width: 30%;
+}
+.submit{
+    background-color: #ff8025;
+    border: 0.5px solid rgb(32, 32, 32);
+}
+.submit:hover{
+    background-color: #ff8f3f;
+}
+.submit:active{
+    background-color: #ea731f;
+}
+
+#titleInput, #authorInput{
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 0.5px solid rgb(32, 32, 32);
+    margin-top: 3px;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}

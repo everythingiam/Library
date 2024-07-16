@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Objects</title>
+</head>
+<body>
+    <section>
+        <article>
+            <h1>Library</h1>
+            <p class="main-p">Add some of your favourite books or add it to wishlist!</p>
+        </article>
+        <button class="add">
+            +
+        </button>
+    </section>
+    <section class="books">
+        <div class="card">
+            <h3>Name of the Book</h3>
+            <span>Author:</span>
+            <p>Name Surname</p>
+            <button class="reading">Status</button>
+            <button class="delete">Delete</button>
+        </div>
+    </section>
+    <div class="dialog" style="display: none;">
+        <div class="dialog-content">
+            <form id="formm">
+                <label for="titleInput">Title</label>
+                <input type="text" id="titleInput" placeholder="Title">
+                <label for="authorInput">Author</label>
+                <input type="text" id="authorInput" placeholder="Author">
+                <input type="checkbox" name="readCheckbox" id="readCheckbox">
+                <label for="readCheckbox">Book is read</label>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
